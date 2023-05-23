@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "697221128441",
+    "firebase_url": "https://imhungry-72a80-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "imhungry-72a80",
+    "storage_bucket": "imhungry-72a80.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:697221128441:android:8acafd62c798fe50cf4228",
+        "android_client_info": {
+          "package_name": "com.example.imhungry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "697221128441-nblabetbb4p20kovram2g1c713c31n2k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.imhungry",
+            "certificate_hash": "464785c204a95f613bed50b58d7385d56efdc47b"
+          }
+        },
+        {
+          "client_id": "697221128441-77kotbr42bf2u3smungc5qviiskn2dgt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTM7O_HESBe-G6CtpXXjpOGbXLZWvH4LE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "697221128441-77kotbr42bf2u3smungc5qviiskn2dgt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
