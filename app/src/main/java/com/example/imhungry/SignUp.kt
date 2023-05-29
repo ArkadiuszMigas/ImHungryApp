@@ -8,10 +8,6 @@ import android.widget.Button
 import android.widget.Toast
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.ChildEventListener
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
 
 class SignUp : AppCompatActivity() {
     private lateinit var firebaseAuth: FirebaseAuth
@@ -41,7 +37,7 @@ class SignUp : AppCompatActivity() {
 
                     firebaseAuth.createUserWithEmailAndPassword(mail,pass).addOnCompleteListener{
                         if(it.isSuccessful){
-                            val intent = Intent(this, HomePage::class.java)
+                            val intent = Intent(this, MainPage::class.java)
                             startActivity(intent)
                         }
                         else{

@@ -5,13 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.EditText
 import android.widget.Toast
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseAuthException
-import com.google.firebase.database.*
-import org.w3c.dom.Text
 
 class LogIn : AppCompatActivity() {
 
@@ -37,7 +33,7 @@ class LogIn : AppCompatActivity() {
             if(mail.isNotEmpty() && pass.isNotEmpty()){
                     firebaseAuth.signInWithEmailAndPassword(mail,pass).addOnCompleteListener{
                         if(it.isSuccessful){
-                            val intent = Intent(this, HomePage::class.java)
+                            val intent = Intent(this, MainPage::class.java)
                             startActivity(intent)
                         }
                         else{
