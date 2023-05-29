@@ -1,16 +1,349 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomePage">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="home page"
-        android:textSize="40dp"
-        android:textColor="@color/btnSignUp"/>
+        android:layout_height="match_parent">
 
+        <ImageButton
+            android:id="@+id/btnCart"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Cart"
+            android:src="@drawable/baseline_shopping_cart_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnFavs"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="265dp"
+            android:layout_marginBottom="757dp"
+            android:contentDescription="Favourities"
+            android:src="@drawable/baseline_star_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnCart"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="580dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCart">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/imageButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:contentDescription="RestaurantImage"
+                            android:src="@drawable/ic_launcher_foreground" />
+
+                        <LinearLayout
+                            android:layout_width="250dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/RestaurantName1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Restaurant 1" />
+
+                            <TextView
+                                android:id="@+id/Rate1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="4,5/5 " />
+
+                            <TextView
+                                android:id="@+id/Time1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="30-50 min" />
+
+                            <Button
+                                android:id="@+id/btnOrder1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/btnSignUp"
+                                android:text="Order" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="RestaurantImage"
+                        android:src="@drawable/ic_launcher_foreground" />
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/RestaurantName2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Restaurant 1" />
+
+                        <TextView
+                            android:id="@+id/Rate2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="4,5/5 " />
+
+                        <TextView
+                            android:id="@+id/Time2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="30-50 min" />
+
+                        <Button
+                            android:id="@+id/btnOrder2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/btnSignUp"
+                            android:text="Order" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="RestaurantImage"
+                        android:src="@drawable/ic_launcher_foreground" />
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/RestaurantName3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Restaurant 1" />
+
+                        <TextView
+                            android:id="@+id/Rate3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="4,5/5 " />
+
+                        <TextView
+                            android:id="@+id/Time3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="30-50 min" />
+
+                        <Button
+                            android:id="@+id/btnOrder3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/btnSignUp"
+                            android:text="Order" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="RestaurantImage"
+                        android:src="@drawable/ic_launcher_foreground" />
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/RestaurantName4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Restaurant 1" />
+
+                        <TextView
+                            android:id="@+id/Rate4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="4,5/5 " />
+
+                        <TextView
+                            android:id="@+id/Time4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="30-50 min" />
+
+                        <Button
+                            android:id="@+id/btnOrder4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/btnSignUp"
+                            android:text="Order" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="RestaurantImage"
+                        android:src="@drawable/ic_launcher_foreground" />
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/RestaurantName5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Restaurant 1" />
+
+                        <TextView
+                            android:id="@+id/Rate5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="4,5/5 " />
+
+                        <TextView
+                            android:id="@+id/Time5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="30-50 min" />
+
+                        <Button
+                            android:id="@+id/btnOrder5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/btnSignUp"
+                            android:text="Order" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="RestaurantImage"
+                        android:src="@drawable/ic_launcher_foreground" />
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/RestaurantName6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Restaurant 1" />
+
+                        <TextView
+                            android:id="@+id/Rate6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="4,5/5 " />
+
+                        <TextView
+                            android:id="@+id/Time6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="30-50 min" />
+
+                        <Button
+                            android:id="@+id/tnOrder6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/btnSignUp"
+                            android:text="Order" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

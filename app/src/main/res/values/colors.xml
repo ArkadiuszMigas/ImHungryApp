@@ -10,4 +10,6 @@
 
     <color name="btnSignUp">#028A0F</color>
     <color name="btnLogIn">#028A0F</color>
+
+    <color name="grey">#808080</color>
 </resources>

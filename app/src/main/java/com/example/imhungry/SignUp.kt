@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.Toast
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 
 class SignUp : AppCompatActivity() {
     private lateinit var firebaseAuth: FirebaseAuth
