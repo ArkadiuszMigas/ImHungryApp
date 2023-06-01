@@ -26,8 +26,8 @@ class MainPage : AppCompatActivity() {
             }
 
             true
-
         }
+
     }
 
     private fun changeSite(fragment:Fragment){

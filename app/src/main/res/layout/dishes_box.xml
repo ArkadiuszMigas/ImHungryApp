@@ -11,12 +11,12 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/Restaurant_Image"
+            android:id="@+id/Dish_Image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_gravity="center"
-            android:contentDescription="RestaurantImage"
+            android:contentDescription="DishImage"
             android:src="@drawable/ic_launcher_foreground" />
 
         <LinearLayout
@@ -26,37 +26,38 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/RestaurantName"
+                android:id="@+id/DishName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Restaurant"
+                android:text="Dish"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/Rate"
+                android:id="@+id/Ingredients"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Rate"
+                android:text="Ingredients"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 
             <TextView
-                android:id="@+id/Time"
+                android:id="@+id/Price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Time"
+                android:text="Price"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 
             <Button
-                android:id="@+id/btnOrder"
+                android:id="@+id/btnAddToCart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:backgroundTint="@color/emerald"
-                android:text="Order" />
+                android:text="Add To Cart" />
         </LinearLayout>
 
     </LinearLayout>
+
 </LinearLayout>

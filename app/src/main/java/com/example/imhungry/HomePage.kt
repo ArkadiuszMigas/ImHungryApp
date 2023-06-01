@@ -5,28 +5,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ListView
 
-
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [HomePage.newInstance] factory method to
- * create an instance of this fragment.
- */
 class HomePage : Fragment() {
 
     private lateinit var adapter: MyAdapter
     private lateinit var restaurants: ArrayList<Restaurants>
     private lateinit var listview:ListView
+    private lateinit var btnOrder:Button
+    private lateinit var btnCart:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         val imageId = intArrayOf(
             R.drawable.pizza,
             R.drawable.pizza2,
@@ -61,6 +52,7 @@ class HomePage : Fragment() {
             val restaurant = Restaurants(name[i],rate[i],time[i],imageId[i])
             restaurants.add(restaurant)
         }
+
     }
 
     override fun onCreateView(
@@ -69,24 +61,27 @@ class HomePage : Fragment() {
     ): View? {
 
         val view = inflater.inflate(R.layout.fragment_home_page,container,false)
+        val viewRest = inflater.inflate(R.layout.restaurant_box,container,false)
 
+        btnCart = view.findViewById(R.id.btnCart)
         adapter = MyAdapter(requireActivity(),restaurants)
         listview = view.findViewById(R.id.listview)
         listview.adapter = adapter
 
+
         return view
 
     }
+
+
+
 
     companion object {
 
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             HomePage().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
+
             }
     }
 }
