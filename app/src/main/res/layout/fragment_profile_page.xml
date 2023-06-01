@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/white"
     tools:context=".ProfilePage"
 
     >
@@ -34,7 +35,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Name:"
-                    android:textColor="@color/btnSignUp"
+                    android:textColor="@color/emerald"
                     android:textSize="20sp" />
 
                 <EditText
@@ -42,7 +43,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="ab"
-                    android:textColor="@color/btnSignUp"
+                    android:textColor="@color/emerald"
                     android:textSize="20sp"
                     android:textAlignment="center"
                     android:background="@color/grey"
@@ -54,7 +55,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Last Name:"
-                    android:textColor="@color/btnSignUp"
+                    android:textColor="@color/emerald"
                     android:textSize="20sp" />
 
                 <EditText
@@ -62,7 +63,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="cd"
-                    android:textColor="@color/btnSignUp"
+                    android:textColor="@color/emerald"
                     android:textSize="20sp"
                     android:textAlignment="center"
                     android:background="@color/grey"
@@ -88,7 +89,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Adress:"
-                android:textColor="@color/btnSignUp"
+                android:textColor="@color/emerald"
                 android:textSize="20sp" />
 
             <EditText
@@ -96,8 +97,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="np. Chorzowska 216/22"
-                android:textColor="@color/btnSignUp"
-                android:textColorHint="@color/btnSignUp"
+                android:textColor="@color/emerald"
+                android:textColorHint="@color/emerald"
                 android:textSize="20sp"
                 android:textAlignment="center"
                 android:background="@color/grey"
@@ -108,7 +109,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="City:"
-                android:textColor="@color/btnSignUp"
+                android:textColor="@color/emerald"
                 android:textSize="20sp" />
 
             <EditText
@@ -116,8 +117,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="np. Katowice"
-                android:textColor="@color/btnSignUp"
-                android:textColorHint="@color/btnSignUp"
+                android:textColor="@color/emerald"
+                android:textColorHint="@color/emerald"
                 android:textSize="20sp"
                 android:textAlignment="center"
                 android:background="@color/grey"
@@ -128,7 +129,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Postal Code:"
-                android:textColor="@color/btnSignUp"
+                android:textColor="@color/emerald"
                 android:textSize="20sp" />
 
             <EditText
@@ -136,8 +137,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="np. 41-007"
-                android:textColor="@color/btnSignUp"
-                android:textColorHint="@color/btnSignUp"
+                android:textColor="@color/emerald"
+                android:textColorHint="@color/emerald"
                 android:textSize="20sp"
                 android:textAlignment="center"
                 android:background="@color/grey"
@@ -148,7 +149,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Phone Number:"
-                android:textColor="@color/btnSignUp"
+                android:textColor="@color/emerald"
                 android:textSize="20sp" />
 
             <EditText
@@ -156,8 +157,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="np. 751248862"
-                android:textColor="@color/btnSignUp"
-                android:textColorHint="@color/btnSignUp"
+                android:textColor="@color/emerald"
+                android:textColorHint="@color/emerald"
                 android:textSize="20sp"
                 android:textAlignment="center"
                 android:background="@color/grey"
@@ -167,7 +168,7 @@
                 android:id="@+id/btnSaveProfile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/btnSignUp"
+                android:backgroundTint="@color/emerald"
                 android:text="Save"
                 android:textColor="@color/white"
                 android:textSize="20sp" />

@@ -36,7 +36,7 @@
             android:layout_height="100dp"
             android:layout_weight="2"
             android:layout_margin="8dp"
-            android:backgroundTint="@color/btnSignUp"
+            android:backgroundTint="@color/emerald"
             android:text="Sign Up"
             android:textColor="@color/black">
 
@@ -48,7 +48,7 @@
             android:layout_height="100dp"
             android:layout_weight="2"
             android:layout_margin="8dp"
-            android:backgroundTint="@color/btnLogIn"
+            android:backgroundTint="@color/emerald"
             android:text="Log In"
             android:textColor="@color/black">
 

@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="I'M "
-            android:textColor="@color/btnSignUp"
+            android:textColor="@color/emerald"
             android:textSize="34sp" />
 
 
@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="HUNGRY"
-            android:textColor="@color/btnSignUp"
+            android:textColor="@color/emerald"
             android:textSize="34sp" />
 
 
@@ -51,7 +51,7 @@
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/btnSignUp"
+        android:background="@color/emerald"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
