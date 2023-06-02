@@ -1,20 +1,23 @@
 package com.example.imhungry
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ListView
 
-class HomePage : Fragment() {
+class HomePage : Fragment(R.layout.fragment_home_page) {
 
     private lateinit var adapter: MyAdapter
     private lateinit var restaurants: ArrayList<Restaurants>
     private lateinit var listview:ListView
-    private lateinit var btnOrder:Button
-    private lateinit var btnCart:Button
+    private lateinit var btnFav:ImageButton
+    private lateinit var btnCart:ImageButton
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -61,19 +64,35 @@ class HomePage : Fragment() {
     ): View? {
 
         val view = inflater.inflate(R.layout.fragment_home_page,container,false)
-        val viewRest = inflater.inflate(R.layout.restaurant_box,container,false)
-
-        btnCart = view.findViewById(R.id.btnCart)
         adapter = MyAdapter(requireActivity(),restaurants)
         listview = view.findViewById(R.id.listview)
+        listview.isClickable= true
         listview.adapter = adapter
 
+        btnFav = view.findViewById(R.id.btnFavs)
+        btnCart = view.findViewById(R.id.btnCart)
+
+
+        btnCart.setOnClickListener(View.OnClickListener {
+            changeSite((CartPage()))
+            Log.d("TAG","Cart")
+        })
 
         return view
 
     }
+    private fun changeSite(fragment:Fragment){
+        val fragmentManager = childFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.home_layout,fragment)
+        fragmentTransaction.commit()
+    }
 
-
+    private fun order(view: View) {
+        // Your code for handling the button click goes here
+        changeSite(DishesPage())
+        Log.d("TAG", "Order")
+    }
 
 
     companion object {

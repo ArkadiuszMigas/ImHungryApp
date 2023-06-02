@@ -2,6 +2,7 @@ package com.example.imhungry
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.view.get
 import androidx.fragment.app.Fragment
 import com.example.imhungry.databinding.ActivityMainPageBinding
 

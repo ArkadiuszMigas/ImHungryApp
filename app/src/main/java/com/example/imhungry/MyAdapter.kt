@@ -9,12 +9,12 @@ import android.widget.ImageView
 import android.widget.TextView
 
 class MyAdapter(private val context:Activity, private val arrayList: ArrayList<Restaurants>) : ArrayAdapter<Restaurants>(context,
-                R.layout.restaurant_box,arrayList) {
+                R.layout.fragment_restaurant_box,arrayList) {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
 
         val inflater : LayoutInflater = LayoutInflater.from(context)
-        val view:View = inflater.inflate(R.layout.restaurant_box,null)
+        val view:View = inflater.inflate(R.layout.fragment_restaurant_box,null)
 
         val imageView :ImageView = view.findViewById(R.id.Restaurant_Image)
         val name: TextView = view.findViewById(R.id.RestaurantName)
