@@ -17,8 +17,8 @@ class MyAdapter(private val context:Activity, private val arrayList: ArrayList<R
         val view:View = inflater.inflate(R.layout.fragment_restaurant_box,null)
 
         val imageView :ImageView = view.findViewById(R.id.Restaurant_Image)
-        val name: TextView = view.findViewById(R.id.RestaurantName)
-        val rate:TextView = view.findViewById(R.id.Rate)
+        val name : TextView = view.findViewById(R.id.RestaurantName)
+        val rate : TextView = view.findViewById(R.id.Rate)
         val time : TextView = view.findViewById(R.id.Time)
 
         imageView.setImageResource(arrayList[position].imageID)

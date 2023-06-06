@@ -4,18 +4,19 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.core.view.get
-import androidx.fragment.app.Fragment
-import com.example.imhungry.databinding.ActivityMainPageBinding
+import android.view.View
+import android.widget.ImageButton
+import com.example.imhungry.databinding.ActivityDishesPageBinding
+import com.example.imhungry.databinding.ActivitySearchPageBinding
 
-class MainPage : AppCompatActivity() {
+class SearchPageActivity : AppCompatActivity() {
 
-    private lateinit var binding :ActivityMainPageBinding
+    private lateinit var binding: ActivitySearchPageBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainPageBinding.inflate(layoutInflater)
+        binding = ActivitySearchPageBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        changeSite(HomePageActivity())
 
         binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId){
@@ -23,13 +24,16 @@ class MainPage : AppCompatActivity() {
                 R.id.search -> changeSite(SearchPageActivity())
                 R.id.profile -> changeSite(ProfilePageActivity())
 
-                else ->{
-
-                }
             }
 
             true
         }
+
+        val btnCart = findViewById<ImageButton>(R.id.btnCart)
+
+        btnCart.setOnClickListener(View.OnClickListener {
+            changeSite(CartPageActivity())
+        })
 
     }
 

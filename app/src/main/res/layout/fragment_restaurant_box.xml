@@ -56,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:backgroundTint="@color/emerald"
-                android:onClick="btnClick"
+                android:onClick="onClick"
                 android:text="Order" />
         </LinearLayout>
 
